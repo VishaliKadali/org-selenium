@@ -25,7 +25,7 @@ public class EntrySet {
 		map.put("Banana", 30);
 		
 		Set<Map.Entry<String,Integer>> entries=map.entrySet(); 
-		for(Map.Entry<String, Integer> entry:entries) {
+		for(Map.Entry<String,Integer> entry:entries) {
 			String key=entry.getKey();
 			Integer value=entry.getValue();
 			System.out.println(" Key: " +key+ ", Value: " +value);
