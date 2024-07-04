@@ -7,7 +7,7 @@ public class FindDuplicatesUsingHashMap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] inputArray= {2,5,7,9,7,2,1,5,1,4,7,};
+		int[] inputArray= {2,5,7,9,7,2,1,5,1,4,7};
 		Map<Integer,Integer> hmap=new HashMap<Integer, Integer>();
 		for(int i=0;i<=inputArray.length-1;i++) {
 			if(hmap.containsKey(inputArray[i])) {

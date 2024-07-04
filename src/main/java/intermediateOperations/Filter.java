@@ -14,6 +14,7 @@ public class Filter {
 		// Use the Stream API to filter names that start with "V" and collect them into a new list.
 		List<String> filteredNames = names.stream().filter(name -> name.startsWith("V")).collect(Collectors.toList());
 		filteredNames.forEach(System.out::println);
+		//filteredNames.forEach(name -> System.out.println(name));
 	}
 
 }

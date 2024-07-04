@@ -8,7 +8,7 @@ public class ReplaceWordSpecialCharactersIncrement {
 	        StringBuilder sb = new StringBuilder();
 
 	        for (int i = 0; i < str.length(); i++) {
-	            char c = str.charAt(i);
+	        	 char c = str.charAt(i);
 	            if (c == 'o') {
 	                if (i == 1) {
 	                    sb.append('$');
