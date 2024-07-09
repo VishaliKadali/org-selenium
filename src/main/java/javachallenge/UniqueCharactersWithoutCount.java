@@ -2,7 +2,7 @@ package javachallenge;
 
 import java.util.HashMap;
 
-public class OnlyCharactersWithoutCount {
+public class UniqueCharactersWithoutCount {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,6 +24,12 @@ public class OnlyCharactersWithoutCount {
 			}
 			
 		}
+		
+		//System.out.println(hmap);
+		
+		//Convert the string into toCharArray 
+		//Get eachCharacter from hmap
+		//if hmap has morethan 1 character print the character
 		
 		for (char c : str.toCharArray()) {
 			if(hmap.get(c)>1) {

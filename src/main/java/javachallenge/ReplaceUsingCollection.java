@@ -9,7 +9,7 @@ public class ReplaceUsingCollection {
 		// TODO Auto-generated method stub
 
 			List<Integer> list=new ArrayList<Integer>();
-			for(int i=0;i<=100;i++) {
+			for(int i=1;i<=100;i++) {
 				
 				if(i%3==0 && i%2==0) {
 					System.out.println("Selenium");

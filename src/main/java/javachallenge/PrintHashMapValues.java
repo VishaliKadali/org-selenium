@@ -1,6 +1,8 @@
 package javachallenge;
 
 import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class PrintHashMapValues {
 
@@ -15,9 +17,16 @@ public class PrintHashMapValues {
 			hmap.put(3,"Devansh");
 			hmap.put(4,"Devansh");
 			hmap.remove(3);
-			System.out.println(hmap);
+			//System.out.println(hmap);
 		
-
+			Set<Entry<Integer, String>> entrySet = hmap.entrySet();
+			for (Entry<Integer, String> eachEntry : entrySet) {
+				Integer Key=eachEntry.getKey();
+				String value=eachEntry.getValue();
+				System.out.println("Key is "+Key+ " Value is " +value);
+			}
 	}
+	
+	
 
 }
