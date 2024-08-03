@@ -15,11 +15,15 @@ public class OccuranceOfString {
 
         // Iterate through the string array
         for (String str : strArray) {
+        	
             // Check if the string is already present in the HashMap
             if (occurrencesMap.containsKey(str)) {
+            	
                 // Increment the occurrence value by 1
                 occurrencesMap.put(str, occurrencesMap.get(str) + 1);
+                
             } else {
+            	
                 // Add the string to the HashMap with an initial occurrence of 1
                 occurrencesMap.put(str, 1);
             }
