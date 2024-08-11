@@ -24,7 +24,7 @@ public class OccuranceOfCompleteString {
 		
 		for (Entry<String, Integer> eachEntry : hmap.entrySet()) {
 			if(eachEntry.getValue()>1) {
-				System.out.println("Word : " +eachEntry.getKey()+ " is present : " +eachEntry.getValue()+ " times");
+				System.out.println("Word " +eachEntry.getKey()+ " is present : " +eachEntry.getValue()+ " times");
 			}
 		}
 	}
