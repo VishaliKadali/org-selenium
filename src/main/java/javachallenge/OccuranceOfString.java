@@ -32,9 +32,9 @@ public class OccuranceOfString {
        
 
         // Print the occurrences of each string
-        for (String key : occurrencesMap.keySet()) {
-            int occurrences = occurrencesMap.get(key);
-            System.out.println("String: " + key + ", Occurrences: " + occurrences);
+        for (String eachkey : occurrencesMap.keySet()) {
+            int occurrences = occurrencesMap.get(eachkey);
+            System.out.println("String: " + eachkey + ", Occurrences: " + occurrences);
         }
     }
 
