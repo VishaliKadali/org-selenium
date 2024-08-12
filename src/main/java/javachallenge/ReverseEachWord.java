@@ -23,7 +23,7 @@ public class ReverseEachWord {
 			revString= revString + revWord + " ";
 		}
 		
-		System.out.println(revString.trim());
+		System.out.println(revString);
 	}
 
 }
