@@ -6,7 +6,7 @@ public class UppercaseToLowercase {
 		// TODO Auto-generated method stub
 
 		String str="Test Automation engiNeer";
-		StringBuilder result=new StringBuilder();
+		StringBuilder sb=new StringBuilder();
 		
 		//Iterate through each chraacter in a string
 		for(int i=0; i< str.length();i++) {
@@ -14,20 +14,20 @@ public class UppercaseToLowercase {
 			
 			// Check if the character is uppercase
 			if(Character.isUpperCase(ch)) {
-				result.append(Character.toLowerCase(ch));
+				sb.append(Character.toLowerCase(ch));
 			}
 			
 			else if(Character.isLowerCase(ch)) {
-				result.append(Character.toUpperCase(ch));
+				sb.append(Character.toUpperCase(ch));
 			}
 			
 			else {
-				result.append(ch);
+				sb.append(ch);
 			}
 		}
 		
 		 // Convert StringBuilder to String and print the result
-        System.out.println(result.toString());
+        System.out.println(sb.toString());
 	}
 
 }
