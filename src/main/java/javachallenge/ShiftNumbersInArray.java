@@ -2,26 +2,8 @@ package javachallenge;
 
 public class ShiftNumbersInArray {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		int[] arr= {1,2,3,0,20,0,2};
-//		int lastElement=arr[arr.length-1];
-//		
-//		//Shift elements to the right
-//		for(int i=arr.length-2; i>3; i--) {
-//			
-//			if(arr[i]==0) {
-//				arr[i]=arr[i-1];
-//				
-//			}
-//			arr[4]=lastElement;
-//		}
-//		
-//		//print the modified array
-//		for (int i : arr) {
-//			System.out.println(i + "");
-		
-		
 int[] arr = {1, 2, 3, 0, 20, 0, 2};
         
         int n = arr.length;
