@@ -16,6 +16,7 @@ public class SortArray {
 				}
 
 			}
+			
 			System.out.println(array[i]);
 
 		}
