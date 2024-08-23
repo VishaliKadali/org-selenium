@@ -27,7 +27,8 @@ public class Hooks extends Baseclass {
 	}
 
 	@After
-	public void postCondition() {
+	public void postCondition() throws InterruptedException {
+		Thread.sleep(1000);
 		driver.close();
 	}
 
