@@ -3,17 +3,10 @@ package steps;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
-import hooks.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.But;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StepDefinition extends Baseclass {
 
