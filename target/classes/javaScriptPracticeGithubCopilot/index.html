@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Chat Application</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
+</head>
+<body>
+    <h1>Real-Time Chat Application</h1>
+    <style>
+        #chat {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #message-list {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        #message-list li {
+            margin-bottom: 5px;
+        }
+
+        #message-input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        #send-button {
+            width: 100%;
+            padding: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #send-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <div id="chat">
+        <ul id="message-list"></ul>
+        <input type="text" id="message-input" placeholder="Type your message here">
+        <button id="send-button">Send</button>
+    </div>
+
+    <script>
+        // Connect to the server using socket.io
+        const socket = io('http://localhost:3000');
+
+        // Get references to the HTML elements
+        const messageList = document.getElementById('message-list');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+
+        // Function to handle sending a message
+        function sendMessage() {
+            const message = messageInput.value;
+            if (message) {
+                // Emit a 'chat message' event to the server
+                socket.emit('chat message', message);
+                messageInput.value = '';
+            }
+        }
+
+        // Function to handle receiving a message
+        function receiveMessage(message) {
+            const li = document.createElement('li');
+            li.textContent = message;
+            messageList.appendChild(li);
+        }
+
+        // Add event listener to the send button
+        sendButton.addEventListener('click', sendMessage);
+
+        // Listen for 'chat message' events from the server
+        socket.on('chat message', receiveMessage);
+    </script>
+</body>
+</html>

@@ -35,6 +35,11 @@ public class UniqueCharactersWithoutCount {
 			if(hmap.get(c)>1) {
 				System.out.println(c);
 			}
+			else {
+				if(hmap.get(c)==1) {
+					System.out.println("Unique elements "+c);
+				}
+			}
 		}
 	}
 
